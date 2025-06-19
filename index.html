@@ -4,22 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Rule of Law</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-  .note-card {
-    background-color: #f1f1f1;
-    padding: 20px 30px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: background 0.3s;
-    min-width: 150px;
-  }
-
-  .note-card:hover {
-    background-color: #dcdcdc;
-  }
-  </style>
 </head>
   <style>
     body {
@@ -115,40 +99,6 @@
     <a href="https://instagram.com/ruleof_law946" target="_blank">@ruleof_law946</a>
   </p>
   </div>
-  <section id="law-notes" style="padding: 40px; text-align: center;">
-  <h2>Law Notes</h2>
-
-  <!-- Search Bar -->
-  <input type="text" id="searchInput" onkeyup="filterNotes()" placeholder="Search Law Notes..." style="
-    width: 60%;
-    padding: 10px;
-    margin: 20px auto;
-    font-size: 16px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    display: block;
-  ">
-
-  <!-- Clickable Options -->
-  <div id="notesList" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-    <a href="#" class="note-card">Articles</a>
-    <a href="#" class="note-card">Blogs</a>
-    <a href="#" class="note-card">Case Commentary</a>
-    <a href="#" class="note-card">Research Papers</a>
-  </div>
-  </section>
-  <script>
-  function filterNotes() {
-    let input = document.getElementById("searchInput");
-    let filter = input.value.toLowerCase();
-    let notes = document.getElementById("notesList").getElementsByTagName("a");
-
-    for (let i = 0; i < notes.length; i++) {
-      let txtValue = notes[i].textContent || notes[i].innerText;
-      notes[i].style.display = txtValue.toLowerCase().includes(filter) ? "" : "none";
-    }
-  }
-  </script>
    <footer>
     <p>&copy; 2025 Rule of Law. All rights reserved.</p>
   </footer>

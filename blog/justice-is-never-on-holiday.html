@@ -5,8 +5,8 @@
   <title>Justice is Never on Holiday | Rule of Law</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Font Awesome for 3D Icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- ✅ Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     /* NAVBAR */
@@ -33,34 +33,47 @@
       color: #0077cc;
     }
 
-    /* FOOTER */
-    .footer {
-      position: fixed;
-      right: 10px;
-      bottom: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      z-index: 1000;
-    }
-
-    .footer a {
-      color: #2c3e50;
-      font-size: 28px;
-      transition: transform 0.3s ease, color 0.3s ease;
-    }
-
-    .footer a:hover {
-      transform: scale(1.2);
-      color: #0077cc;
-    }
-
     /* Content Styling */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 20px;
       line-height: 1.6;
+    }
+
+    /* ✅ NEW FOOTER */
+    .main-footer {
+      background-color: #0d0d0d;
+      color: #ffffff;
+      padding: 25px 20px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 60px;
+    }
+
+    .main-footer p {
+      font-size: 14px;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      color: #ffffff;
+      font-size: 26px;
+      text-decoration: none;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.3);
+      color: #1da1f2;
     }
   </style>
 </head>
@@ -73,7 +86,6 @@
     <a href="../Legalcontent.html">Legal Contents</a>
     <a href="../Legal-updates.html">Legal Updates</a>
     <a href="../opportunities.html">Opportunities</a>
-  
   </div>
 
   <!-- ✅ MAIN CONTENT -->
@@ -95,18 +107,25 @@
 
   <p>The success of this model is due to the collaborative efforts made by both the bench and the bar. Their active participation strongly upholds the virtue of justice. This model may not yet occupy a permanent position in the court's calendar. However, it has reframed the perception about justice and its efficient delivery. This working model has suggested that recess doesn’t mean silence—and justice can never be on recess.</p>
 
-  <!-- ✅ FIXED RIGHT FOOTER WITH ICONS -->
-  <div class="footer">
-    <a href="https://www.instagram.com/ruleof_law_?igsh=ZTJ6dWp2OGY1YTlk" target="_blank" title="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/rule-of-law-406487374?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="mailto:ruleoflaw946@gmail.com" title="Email">
-      <i class="fas fa-envelope"></i>
-    </a>
-  </div>
+  <!-- ✅ MODERN STUDENT-FRIENDLY BOTTOM FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-content">
+      <p><strong>Rule of Law</strong> is a student-driven initiative to simplify legal updates, opportunities, and knowledge sharing. 📚  
+      We're here to support budding legal minds and make law accessible to all. ⚖️✨</p>
+
+      <div class="social-icons">
+        <a href="https://www.instagram.com/ruleof_law_?igsh=ZTJ6dWp2OGY1YTlk" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rule-of-law-406487374?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:ruleoflaw946@gmail.com" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

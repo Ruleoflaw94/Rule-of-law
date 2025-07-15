@@ -11,7 +11,9 @@
   <style>
     /* NAVBAR */
     .navbar {
-  background-color: #f9f9f9; /* SAME as main page */
+  background-color: #f9f9f9; /* Matches main theme */
+  width: 100vw; /* Full screen width */
+  margin: 0;    /* Remove margin gaps */
   padding: 10px 20px;
   display: flex;
   justify-content: center;
@@ -22,7 +24,8 @@
   top: 0;
   z-index: 1000;
   border-bottom: 1px solid #ddd;
-}
+  box-sizing: border-box;
+    }
 
 .navbar a {
   text-decoration: none;
@@ -42,6 +45,7 @@
       margin: 0;
       padding: 20px;
       line-height: 1.6;
+      box-sizing: border-box;
     }
 
     /* ✅ NEW FOOTER */

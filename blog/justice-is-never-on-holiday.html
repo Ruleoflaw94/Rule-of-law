@@ -2,51 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Justice is Never on Holiday | Rule of Law</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- ✅ Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <title>Opportunities - Rule of Law</title>
+  <title>Justice is Never on Holiday | Rule of Law</title>
   <style>
-    /* NAVBAR */
-    .navbar {
-  background-color: #f9f9f9; /* Matches main theme */
-  width: 100vw; /* Full screen width */
-  margin: 0;    /* Remove margin gaps */
-  padding: 10px 20px;
+  /* Global Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+    /* Header Styling */
+  header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+.logo {
+  height: 80px;
+  width: auto;
+  border-radius: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header-content p {
+  margin: 4px 0 0;
+  font-size: 1rem;
+}
+
+nav {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  font-weight: bold;
-  font-family: Arial, sans-serif;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  border-bottom: 1px solid #ddd;
-  box-sizing: border-box;
-    }
+  background-color: #34495e;
+  flex-wrap: wrap;
+}
 
-.navbar a {
+nav a {
+  color: white;
   text-decoration: none;
-  color: #333; /* SAME as main page text */
-  transition: color 0.3s, background-color 0.3s;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 1rem;
+  display: block;
 }
 
-.navbar a:hover {
-  color: #0077cc;
-  background-color: #efefef;
+nav a:hover {
+  background-color: #2c3e50;
 }
-    /* Content Styling */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      line-height: 1.6;
-      box-sizing: border-box;
-    }
+    
 
     /* ✅ NEW FOOTER */
     .main-footer {
@@ -86,6 +104,7 @@
 </head>
 
 <body>
+  
 
   <!-- ✅ NAVIGATION BAR -->
   <div class="navbar">

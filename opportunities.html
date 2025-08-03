@@ -5,95 +5,97 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <title>Opportunities - Rule of Law</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      padding: 20px;
-    }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    a {
-      color: #2980b9;
-    }
-    /* Header */
-header {
-  background-color: #2c3e50;
-  color: white;
-  padding: 2rem 1rem;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
-}
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.logo {
-  height: 80px;
-  width: auto;
-  border-radius: 8px;
-}
-.header-content h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-.header-content p {
-  margin: 4px 0 0;
-  font-size: 1rem;
-}
+  /* Global Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-/* Navigation */
-nav {
-  display: flex;
-  justify-content: center;
-  background-color: #34495e;
-  flex-wrap: wrap;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 1rem;
-  display: block;
-}
-nav a:hover {
-  background-color: #2c3e50;
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 0;
+  }
+
+  /* Header Styling */
+  header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logo {
+    max-height: 60px;
+    margin-right: 1rem;
+  }
+    /* Nav Styling */
+  nav {
+    background-color: #34495e;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    transition: background-color 0.3s;
+  }
+
+  nav a:hover {
+    background-color: #2c3e50;
+  }
+
+  /* Animation Styles */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
     /* Footer */
-.main-footer {
-  background-color: #0d0d0d;
-  color: #ffffff;
-  padding: 25px 20px;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  margin-top: 60px;
-}
-.main-footer p {
-  font-size: 14px;
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  margin-top: 10px;
-}
-.social-icons a {
-  color: #ffffff;
-  font-size: 26px;
-  text-decoration: none;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-.social-icons a:hover {
-  transform: scale(1.3);
-  color: #1da1f2;
-    }
-  </style>
-</head>
+  .main-footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+
+  .social-icons a:hover {
+    color: #3498db;
+  }
+</style>
+  </head>
 <body>
   <header>
   <div class="header-content">
@@ -112,18 +114,13 @@ nav a:hover {
   <a href="opportunities.html">Opportunities</a>
 </nav>
 
-  <h1>Opportunities</h1>
+  <h1 class="fade-in">Opportunities</h1>
 
-  <h2>Join the Team</h2>
-  <p>
-    Are you a passionate law student eager to make an impact? Join our core team at <strong>Rule of Law</strong> and collaborate with like-minded individuals on meaningful legal content and projects. If you’re dedicated, enthusiastic, and ready to grow, we’d love to hear from you!<br><br>
-    📩 Send your CV to: <a href="mailto:ruleoflaw946@gmail.com">ruleoflaw946@gmail.com</a>
-  </p>
+<h2 class="fade-in">Join the Team</h2>
+<p class="fade-in">Are you a passionate law student eager to make an impact? ...</p>
 
-  <h2>Opportunity to Publish</h2>
-  <p>
-    We welcome submissions of Articles, Blogs, Case Commentaries, and Research Papers on legal topics. Be part of our platform and showcase your research to a wider legal community.
-  </p>
+<h2 class="fade-in">Opportunity to Publish</h2>
+<p class="fade-in">We welcome submissions of Articles, Blogs, Case Commentaries ...</p>
 
   <p>
     💸 <strong>Note:</strong> A refundable ₹100 processing fee applies. If your manuscript is not selected for publication, the full amount will be refunded.

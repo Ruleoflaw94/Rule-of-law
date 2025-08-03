@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Legal content - Rule of Law</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     header {
   background-color: #2c3e50;
@@ -63,19 +64,27 @@ nav a:hover {
     }
 
     .note-card {
-      background-color: #f1f1f1;
-      padding: 20px 30px;
-      border-radius: 10px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      transition: background 0.3s;
-      min-width: 150px;
-    }
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+  min-width: 180px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
 
-    .note-card:hover {
-      background-color: #dcdcdc;
-    }
+.note-card:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #16a085, #1abc9c);
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 
     #searchInput {
       width: 60%;
@@ -154,10 +163,10 @@ nav a:hover {
   <!-- Clickable Options -->
 <!-- Clickable Note Cards -->
 <div id="notesList">  
-  <a href="article.html" class="note-card">Articles</a>  
-  <a href="blog.html" class="note-card">Blogs</a>  
-  <a href="case-commentary.html" class="note-card">Case Commentary</a>  
-  <a href="research-paper.html" class="note-card">Research Papers</a>  
+  <a href="article.html" class="note-card"><i class="fas fa-file-alt"></i><br>Articles</a>  
+  <a href="blog.html" class="note-card"><i class="fas fa-pen-nib"></i><br>Blogs</a>  
+  <a href="case-commentary.html" class="note-card"><i class="fas fa-gavel"></i><br>Case Commentary</a>  
+  <a href="research-paper.html" class="note-card"><i class="fas fa-book-open"></i><br>Research Papers</a>  
 </div>
 
   <script>

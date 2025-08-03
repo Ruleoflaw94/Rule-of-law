@@ -98,6 +98,7 @@ nav a:hover {
       justify-content: center;
       gap: 20px;
     }
+    
     .main-footer {
   background-color: #0d0d0d;
   color: #ffffff;
@@ -106,6 +107,42 @@ nav a:hover {
   font-family: Arial, sans-serif;
   margin-top: 60px;
 }
+  
+    /* Your existing CSS here */
+
+    /* 👇 Paste this new part below your current styles */
+    .law-notes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+      justify-items: center;
+    }
+    .law-card {
+      background-color: #ffffff;
+      padding: 35px 30px;
+      text-align: center;
+      border-radius: 14px;
+      font-size: 18px;
+      font-weight: bold;
+      width: 100%;
+      max-width: 280px;
+      transition: all 0.4s ease;
+      color: #333;
+      text-decoration: none;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+    }
+    .law-card:hover {
+      transform: scale(1.1);
+      background-color: #f0f8ff;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .law-card i {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+  
 
 .main-footer p {
   font-size: 14px;
@@ -192,25 +229,22 @@ nav a:hover {
   </script>
 
   <!-- ✅ New Law Notes column -->
-  <div class="column">
-    <h2>Law Notes</h2>
-    <ul class="law-notes-list">
-      <li><a href="Torts.html">Torts</a></li>
-      <li><a href="bns.html">BNS</a></li>
-      <li><a href="bnss.html">BNSS</a></li>
-      <li><a href="bsa.html">BSA</a></li>
-      <li><a href="contract.html">Contract Act</a></li>
-      <li><a href="limitation.html">Limitation Act</a></li>
-      <li><a href="property.html">Property Act</a></li>
-      <li><a href="cpc.html">CPC</a></li>
-      <li><a href="family.html">Family Law</a></li>
-      <li><a href="international.html">International Law</a></li>
-      <li><a href="jurisprudence.html">Jurisprudence</a></li>
-      <li><a href="company.html">Company Law</a></li>
-      <li><a href="environment.html">Environment Law</a></li>
-      <li><a href="labour.html">Labour and Industrial Law</a></li>
-      <li><a href="patent.html">Patent Law</a></li>
-    </ul>
+  <div class="law-notes-grid">
+  <a href="Torts.html" class="law-note-card">Torts</a>
+  <a href="bns.html" class="law-note-card">BNS</a>
+  <a href="bnss.html" class="law-note-card">BNSS</a>
+  <a href="bsa.html" class="law-note-card">BSA</a>
+  <a href="contract.html" class="law-note-card">Contract Act</a>
+  <a href="limitation.html" class="law-note-card">Limitation Act</a>
+  <a href="property.html" class="law-note-card">Property Act</a>
+  <a href="cpc.html" class="law-note-card">CPC</a>
+  <a href="family.html" class="law-note-card">Family Law</a>
+  <a href="international.html" class="law-note-card">International Law</a>
+  <a href="jurisprudence.html" class="law-note-card">Jurisprudence</a>
+  <a href="company.html" class="law-note-card">Company Law</a>
+  <a href="environment.html" class="law-note-card">Environment Law</a>
+  <a href="labour.html" class="law-note-card">Labour and Industrial Law</a>
+  <a href="patent.html" class="law-note-card">Patent Law</a>
   </div>
 
   <!-- ✅ MODERN STUDENT-FRIENDLY BOTTOM FOOTER -->

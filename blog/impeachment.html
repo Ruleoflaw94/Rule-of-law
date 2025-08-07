@@ -85,6 +85,33 @@
       margin: 1.5rem 0;
       font-style: italic;
     }
+    .blog-image-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.blog-image {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: fadeInImage 1.5s ease forwards;
+}
+
+@keyframes fadeInImage {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .main-footer {
       background-color: #0d0d0d;
       color: #ffffff;
@@ -139,10 +166,9 @@
   </nav>
 <main>
     <h1 data-aos="fade-right">Supreme Court Rejects Justice Yashwant Varma’s Petition</h1>
-  <div style="text-align: center; margin: 25px 0;">
-  <img src="../yashwant-varma-petition-rejected.png.png"
-       alt="Justice Yashwant Varma Petition Rejected"
-       style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  <div class="blog-image-container">
+  <img src="../yashwant-varma-petition-rejected.png.png" 
+       class="blog-image">
   </div>
 <p data-aos="fade-up">
       On 7 August, 2025, the Supreme Court dismissed the writ petition filed by Allahabad High Court Judge, 
